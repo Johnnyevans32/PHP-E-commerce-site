@@ -1,0 +1,40 @@
+@media screen and (min-width: 576px) {
+	h3{
+		color: cyan;
+		font-size: 10px;
+	}
+}
+@media screen and (min-width: 768px) {
+	h3{
+		color: red;
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 992px) {
+	h3{
+		color: blue;
+		font-size: 30px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	h3{
+		color: yellow;
+	}
+}
+.main .container1{
+	background-image:  linear-gradient(-90deg, red, yellow);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width:100%;
+	height: 400px;
+	padding: 50px;
+}
+ul li:hover{
+	background-color: red;
+	color: white;
+	border-radius: 20px;
+}
+body .main{
+	
+}

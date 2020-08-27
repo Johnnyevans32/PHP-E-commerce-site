@@ -1,0 +1,241 @@
+@font-face{
+	font-family: damn;
+	src:url(Anders.ttf);
+}
+@font-face{
+	font-family: damn1;
+	src:url(koliko.ttf);
+}
+@font-face{
+	font-family: damn2;
+	src:url(Genera-AltLight.ttf);
+}
+@font-face{
+	font-family: damn3;
+	src:url(Dosis-Regular.ttf);
+}
+@font-face{
+	font-family: damn4;
+	src:url(DMoon 2.0 Regular 400.ttf);
+}
+body{
+	font-family: damn2;
+	background-color: white; 
+}
+header{
+	font-family: damn2;
+	background-color: black;
+}
+
+.container .dropdown-toggle, .container .dropdown-item{
+	font-size: 0.7em;
+}
+.header-links a{
+	font-size: 0.9em;
+	text-decoration: none;
+	color:white;
+}
+.navbar-nav{
+	padding: 0.8em 0em;
+}
+.navbar-nav .nav-link{
+	font-size:0.9em;
+	color: red;
+}
+.navbar-nav .nav-item .nav-link{
+	padding: 0 1.3em;
+}
+.navbar-nav .basket-icon{ 
+	margin-right: 6.5em;
+}
+.site-slider{
+	position: relative;
+}
+.position-top{
+	position: absolute;
+	top: 45%;
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+	background-color: black;
+	padding: 1em 1.5em;
+	border-radius: 10rem;
+	color: white;
+	margin: 0 1rem;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+	opacity: 1;
+}
+.right-0{
+	right: 0;
+}
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+	right:40%;
+}
+.slick-dots li{
+	margin:0 0.6rem;
+}
+.slick-dots button{
+	display: block;
+	padding: 0;
+	margin-top: -100px;
+	text-indent: -999999px;
+	background-color: black;
+	height: 0.5rem;
+	border: none;
+	width: 0.5em;
+	border-radius:100%;
+}
+.slick-dots li.slick-active button{
+	transform: scale(2.5);
+	box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.205);
+}
+.site-slider-2{
+	position: relative;
+	height: 30%;
+}
+.site-slider-2.product{
+	position: relative;
+	overflow:hidden;
+	height: 25rem;
+}
+.site-slider-2.product img{
+	margin:auto;
+	width: 90%;
+}
+.site-btn.btn-span{
+	padding: 0.2rem 0.8rem;
+	border-radius: 4rem;
+	border: 1px solid red;
+	background-color: black;
+	color: white;
+}
+.slider-2 .product:hover span{
+	background-color: blue;
+}
+.search-box{
+	position: absolute;left: 50%;margin-bottom: 40px; transform: translate(-50%, -50%);background: black;height: 40px;border-radius: 40px;padding: 10px;
+}
+.search-text{
+	border: none;background: none;outline: none;float: left;padding: 0;color: white;font-size: 16px;transition: 0.4s;line-height: 20px;width: 0px;
+}
+.search-btn{
+	color: white;float: right;width: 20px;height: 20px;font-size: 10px; border-radius: 10px;background: black;display: flex;justify-content: center;transition: 0.4s;align-items: center;
+}
+.search-box:hover > .search-text{
+	width: 150px;
+	padding: 0 7px;
+	margin-right: 25px;
+
+}.search-box:hover > .search-btn{
+	background: white;
+	color: black;
+	padding: 0;
+
+}
+.card-head{
+}
+.card-body{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	overflow: hidden;
+	transition: .5s;
+}
+.card-footer{
+	width: 20%;
+	height: 100%;
+	position: relative;
+	top: 0%;
+	padding: 0;
+	background-color: white;
+	transition: .5s;
+	transform-origin: left;
+	box-sizing: border-box;
+	transform: perspective(600px) rotateY(90deg);
+
+}
+.card-footer span .fa,.card-footer span .fas{
+	font-size: 30px;
+	color: black;
+
+}
+.card-footer span .fa:hover,.card-footer span .fas:hover{
+	font-size: 30px;
+	color: black;
+	border: 1px solid black;
+
+}
+.card:hover .card-footer{
+	transform: perspective(600px) rotateY(0deg);
+}
+.dots{
+	text-decoration:none;
+	color:black;
+}
+.dots:hover{
+	text-decoration: none;
+	color: black;
+	border: 2px solid black;
+	padding: 5px;
+}
+.nav-item {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: black;
+  text-align: left;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.nav-item .nav-link {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.nav-item .nav-link:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.nav-item:hover .nav-link {
+  padding-right: 25px;
+}
+
+.nav-item:hover .nav-link:after {
+  opacity: 1;
+  right: 0;
+}
+.opt{
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 20px;
+	border: 1px solid white;
+}
+.opt:hover{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	background-color: white;
+	border-radius: 20px;
+	border: 1px solid white;
+	transition: 0.5s;
+}
